@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Example</title>
+</head>
+<body>
+    <script>
+        let grade = 2;
+
+        switch (grade) {
+            case 1:
+                document.write("Good");
+                break;
+
+            case 2:
+                document.write("Very Good");
+                break;
+
+            case 3:
+                document.write("Excellent");
+                break;
+
+            default:
+                document.write("Invalid Grade");
+        }
+    </script>
+</body>
+</html>

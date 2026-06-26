@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Conditional Statements</title>
+</head>
+<body>
+
+    <h2>Conditional Statements Example</h2>
+
+    <p id="ifDemo"></p>
+    <p id="ifElseDemo"></p>
+    <p id="ifElseIfDemo"></p>
+    <p id="switchDemo"></p>
+
+    <script>
+        // IF Statement
+        let age = 18;
+
+        if (age >= 18) {
+            document.getElementById("ifDemo").innerHTML =
+                "IF Statement: You are eligible to vote.";
+        }
+
+        // IF ELSE Statement
+        let number = 5;
+
+        if (number % 2 == 0) {
+            document.getElementById("ifElseDemo").innerHTML =
+                "IF ELSE Statement: Number is Even.";
+        } else {
+            document.getElementById("ifElseDemo").innerHTML =
+                "IF ELSE Statement: Number is Odd.";
+        }
+
+        // IF ELSE IF Statement
+        let marks = 85;
+        let grade;
+
+        if (marks >= 90) {
+            grade = "A+";
+        } else if (marks >= 80) {
+            grade = "A";
+        } else if (marks >= 70) {
+            grade = "B";
+        } else if (marks >= 60) {
+            grade = "C";
+        } else {
+            grade = "Fail";
+        }
+
+        document.getElementById("ifElseIfDemo").innerHTML =
+            "IF ELSE IF Statement: Grade = " + grade;
+
+        // SWITCH Statement
+        let day = 2;
+        let dayName;
+
+        switch(day) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid Day";
+        }
+
+        document.getElementById("switchDemo").innerHTML =
+            "SWITCH Statement: " + dayName;
+    </script>
+
+</body>
+</html>

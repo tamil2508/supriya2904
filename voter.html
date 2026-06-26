@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eligible Voter or Not</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h2{
+            font-size: 32px;
+            color: blue;
+        }
+
+        input{
+            font-size: 20px;
+            padding: 10px;
+            border: 3px solid green;
+            border-radius: 8px;
+        }
+
+        button{
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: 3px solid red;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #result{
+            font-size: 28px;
+            font-weight: bold;
+            color: purple;
+            border: 3px solid blue;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Check Voter Eligibility</h2>
+
+    <input type="number" id="age" placeholder="Enter Age">
+
+    <button onclick="checkVoter()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkVoter() {
+            let age = document.getElementById("age").value;
+
+            if (age >= 18) {
+                document.getElementById("result").innerHTML =
+                    "Eligible to Vote";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Not Eligible to Vote";
+            }
+        }
+    </script>
+
+</body>
+</html>

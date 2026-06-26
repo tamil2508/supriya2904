@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Hover Text</title>
+
+<style>
+
+*{
+    margin: 10px;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    position:relative;
+    width:350px;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.container img{
+    width:100%;
+    display:block;
+    transition:0.5s;
+}
+
+.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    opacity:0;
+    transition:0.5s;
+    text-align:center;
+}
+
+.container:hover img{
+    opacity:0.4;
+}
+
+.container:hover .text{
+    opacity:1;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <img src="moon.jpg" alt="Rose">
+
+    <div class="text">
+        Beautiful MOON
+    </div>
+
+</div>
+
+</body>
+</html>
